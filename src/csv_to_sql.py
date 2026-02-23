@@ -119,8 +119,8 @@ def process_csvs_to_sql(csv_paths, table_name):
 if __name__ == "__main__":
     base_path = r"C:/Users/frank/OneDrive - Clarity Data Services/2026 Primary"
     files = [
-        ("Early Voters Through February 18, 2026 REP.csv", "REP"),
-        ("Early Voters Through February 18, 2026 DEM.csv", "DEM"),
+        ("Early Voters Through February 22, 2026 REP.csv", "REP"),
+        ("Early Voters Through February 22, 2026 DEM.csv", "DEM"),
     ]
     csv_paths = []
     for fname, party in files:
