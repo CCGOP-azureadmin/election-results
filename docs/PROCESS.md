@@ -73,3 +73,15 @@ git push origin master
 
 ---
 Place this file under `docs/` so it is available to anyone operating the pipeline.
+
+## Recent runs
+- 2026-02-22: Ingested `Early Voters Through February 22, 2026 REP.csv` and
+	`Early Voters Through February 22, 2026 DEM.csv` using `src/csv_to_sql.py`.
+	The script uploaded the latest dataset to `prim26_Voters`.
+
+### Recommended follow-ups
+- Convert `src/csv_to_sql.py` to auto-discover the latest matching CSVs so the
+	filenames do not need daily edits.
+- Add an automatic backup step before dropping `prim26_Voters` to retain
+	historical snapshots.
+
